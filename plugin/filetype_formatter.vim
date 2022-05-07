@@ -35,32 +35,7 @@ endfunction
 let s:ocamlformat = funcref('s:_ocamlformat')
 
 let s:default_formatters = {
-      \ 'bib': 'bibtool -q -s',
-      \ 'css': s:prettier,
-      \ 'go': 'gofmt',
-      \ 'graphql': s:prettier,
-      \ 'html': s:prettier,
-      \ 'javascript': s:prettier,
-      \ 'javascript.jsx': s:prettier,
-      \ 'javascriptreact': s:prettier,
-      \ 'jinja.html': s:prettier,
-      \ 'json': s:prettier,
-      \ 'jsonc': s:prettier,
-      \ 'markdown': s:prettier,
-      \ 'markdown.mdx': s:prettier,
-      \ 'mdx': s:prettier,
-      \ 'nginx': 'nginxfmt -',
-      \ 'ocaml': s:ocamlformat,
-      \ 'python': 'black -q -',
-      \ 'rust': 'rustfmt --quiet',
-      \ 'svelte': s:prettier,
-      \ 'terraform': 'terraform fmt -',
-      \ 'toml': 'toml-sort',
-      \ 'typescript': s:prettier,
-      \ 'typescript.tsx': s:prettier,
-      \ 'typescriptreact': s:prettier,
-      \ 'yaml': s:prettier,
-      \ 'yaml.docker-compose': s:prettier,
+      \ 'supercollider': 'python /home/murphy/Dropbox/GitHub/sclang_format/src/sclang_format.py -l /home/murphy/Dropbox/GitHub/tidalCompositions/supercollider_sketchpad/formatter/sclang.so',
       \ }
 
 function! s:configure_constants()
